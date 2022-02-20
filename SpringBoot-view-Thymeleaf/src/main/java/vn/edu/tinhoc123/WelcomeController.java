@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class WelcomeController {
 	@GetMapping("/")
-    public String main(Model model) {
+    public String sayHello(Model model) {
         model.addAttribute("message", "Xin chào TiiL");
         return "welcome"; //view
     }
